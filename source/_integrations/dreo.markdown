@@ -11,7 +11,7 @@ ha_platforms:
 ha_integration_type: integration
 ---
 
-The `**Dreo**` integration enables you to control smart switches and outlets connected to the Dreo App.
+The Dreo integration enables you to control smart switches and outlets connected to the Dreo App.
 
 The devices must be added to the Dreo App before this integration can discover them.
 
@@ -48,9 +48,10 @@ Dreo Tower Fan will expose the following details depending on the features suppo
 
 | Attribute | Description                                                  | Example |
 | --------- | ------------------------------------------------------------ | ------- |
-| `mode`    | The current mode the device is in. (DR-HTF001S/002S/004S/005S/007S/008S/009S/010S) | manual  |
-| `speed`   | The current speed setting of the device. (DR-HTF001S/002S/004S/005S/007S/008S/009S/010S) | 1       |
-| oscillate | The current oscillate setting of the device. (DR-HTF001S/002S/004S/005S/007S/008S/009S/010S) | true    |
+| `mode`    | The current mode the device is in. | "manual", "auto", "sleep" |
+| `speed`   | The current speed setting (1-4). | 1 |
+| `oscillate` | Whether oscillation is enabled. | true/false |
+All attributes are supported by models: DR-HTF001S/002S/004S/005S/007S/008S/009S/010S
 
 ## Troubleshooting
 ### Device not discovered
